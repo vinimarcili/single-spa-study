@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const fs = require("fs");
 const spawn = require("cross-spawn");
 const StandaloneSingleSpaPlugin = require("standalone-single-spa-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 const targetIndex = process.argv.findIndex(
   (arg) => arg === "serve" || arg === "production"
@@ -49,6 +49,10 @@ pnpm start -- 01-vanilla-app
 }
 
 const directoryOptions = {
+  "01-code-exercise": {
+    standalone: false,
+    port: 9301,
+  },
   "01-vanilla-app": {
     standalone: false,
     port: 8301,
@@ -283,11 +287,11 @@ function createConfig({ folder }) {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
-      firewall: false,
+      // firewall: false,
       host: "localhost",
-      client: {
-        host: "localhost",
-      },
+      // client: {
+      //   host: "localhost",
+      // },
       https,
     },
   };
