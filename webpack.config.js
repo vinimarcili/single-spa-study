@@ -57,6 +57,18 @@ const directoryOptions = {
     standalone: false,
     port: 8301,
   },
+  "02-angular-exercise": {
+    standalone: false,
+    port: 9302,
+  },
+  "02-vue-exercise": {
+    standalone: false,
+    port: 9303,
+  },
+  "02-react-exercise": {
+    standalone: false,
+    port: 9304,
+  },
   "02-angular-app": {
     standalone: false,
     port: 8302,
@@ -64,6 +76,10 @@ const directoryOptions = {
   "02-vue-app": {
     standalone: false,
     port: 8303,
+  },
+  "02-react-app": {
+    standalone: false,
+    port: 8304,
   },
   "03-react-app": {
     standalone: "disabled",
