@@ -40,4 +40,10 @@ registerApplication({
   activeWhen: ["/angular"],
 });
 
+registerApplication({
+  name: "vue-exercise",
+  app: window.vueExercise,
+  activeWhen: ["/vue-exercise"],
+});
+
 start();

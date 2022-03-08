@@ -113,6 +113,14 @@ const directoryOptions = {
     standalone: "disabled",
     port: 8304,
   },
+  "04-vue-exercise": {
+    standalone: "disabled",
+    port: 8305,
+  },
+  "04-root-config": {
+    standalone: false,
+    port: 3000,
+  },
   "05-react-app": {
     standalone: "disabled",
     port: 8301,
