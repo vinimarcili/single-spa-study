@@ -81,6 +81,14 @@ const directoryOptions = {
     standalone: false,
     port: 8304,
   },
+  "03-root-config-exercise": {
+    standalone: false,
+    port: 9305,
+  },
+  "03-root-config": {
+    standalone: false,
+    port: 8303,
+  },
   "03-react-app": {
     standalone: "disabled",
     port: 8301,
